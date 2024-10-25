@@ -1,0 +1,109 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+}
+.d-flex{
+    display: flex;
+}
+.justify-content-between{
+    justify-content: space-between
+}
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+body{
+    height: 100vh;
+    background-image: url(../img/Background.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.main{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.login-container{
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    align-items: center;
+    width: 812px;
+    height: 625px;
+    background-color: #fff;
+    border-radius: 10px;
+}
+
+.title{
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-size: 30px;
+  color: #9C346B;
+  font-weight: bold;
+}
+
+.email-container, .password-container{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+}
+.email-label, .password-label,.repeatPassword-label{
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-size: 16px;
+  color: #000;
+  font-weight: bold;
+  opacity: 60%;
+  margin-bottom: 14px;
+}
+#email, #password, #repeatPassword{
+    width: 400px;
+    height: 40px;
+    border-radius: 5px;
+    border: 1px solid rgba(0, 0, 0, .3);
+    padding-left: 5px;
+}
+#email::placeholder, #password::placeholder,#repeatPassword::placeholder{
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-size: 14px;
+    color: #000;
+    font-weight: bold;
+    opacity: 10%;
+}
+.forgot-password,.rememberMe-label{
+    font-family: "Inter", sans-serif;
+    font-style: normal;
+    font-size: 10px;
+    color: #9C346B;
+}
+#rememberMe{
+    border: 1px solid rgba(0, 0, 0, .3) !important;
+    border-radius: 3px;
+}
+
+.signIn-container{
+    width: 400px;
+    height: 40px;
+}
+.signInBtn{
+    border-radius: 5px;
+    width: 100%;
+    height: 100%;
+    border: none;
+    background-color: #9C346B;
+    color: #fff;
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-size: 16px;
+    color: #fff;
+    font-weight: bold;
+}
