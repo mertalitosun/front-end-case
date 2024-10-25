@@ -1,0 +1,40 @@
+body{
+    background-color: #753C77;
+}
+
+.main{
+    background-image: url(../img/Video_Background.png);
+    height: 100vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.plane-container{
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.plane-img{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    transform: translateX(20%);
+    animation: plane 3s linear forwards;
+}
+
+@keyframes plane {
+    0% {
+        transform: translateX(20%);
+    }
+    50% {
+        transform: translateX(10%);
+    }
+    75% {
+        transform: translateX(0)
+    }
+    100% {
+        transform: translateX(-10%);
+    }
+}
